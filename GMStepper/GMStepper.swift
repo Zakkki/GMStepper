@@ -65,6 +65,20 @@ import UIKit
             rightButton.setTitle(rightButtonText, forState: .Normal)
         }
     }
+    
+    /// The left button image.
+    @IBInspectable public var leftButtonImage: UIImage? {
+        didSet {
+            leftButton.setImage(leftButtonImage, forState: .Normal)
+        }
+    }
+    
+    /// The right button image.
+    @IBInspectable public var rightButtonImage: UIImage? {
+        didSet {
+            rightButton.setImage(rightButtonImage, forState: .Normal)
+        }
+    }
 
     /// Text color of the buttons. Defaults to white.
     @IBInspectable public var buttonsTextColor: UIColor = UIColor.whiteColor() {
